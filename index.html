@@ -1,79 +1,141 @@
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        line-height: 1.6;
-        color: var(--text-color);
-        background-color: var(--bg-color);
-        margin: 0;
-        padding: 0;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Greenskeeper</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --background: #f8faf8;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --border-color: #e5e7eb;
+        }
 
-    .container {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 40px;
-        background-color: var(--card-bg);
-        border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--background);
+            margin: 0;
+            padding: 40px 20px;
+        }
 
-    header {
-        border-bottom: 2px solid var(--border-color);
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-    }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+        }
 
-    h1 {
-        color: var(--primary-color);
-        font-size: 2.2rem;
-        margin: 0 0 10px 0;
-    }
+        h1 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+        }
 
-    .effective-date {
-        color: #64748b;
-        font-size: 0.95rem;
-        font-weight: 500;
-    }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
 
-    h2 {
-        color: var(--primary-color);
-        font-size: 1.4rem;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 8px;
-    }
+        p, li {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
 
-    h3 {
-        font-size: 1.1rem;
-        color: #334155;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
+        ul {
+            padding-left: 20px;
+        }
 
-    p {
-        margin-top: 0;
-        margin-bottom: 16px;
-    }
+        li {
+            margin-bottom: 8px;
+        }
 
-    ul {
-        margin-top: 0;
-        margin-bottom: 20px;
-        padding-left: 24px;
-    }
+        .effective-date {
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
 
-    li {
-        margin-bottom: 8px;
-    }
+        .contact-card {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
 
-    a {
-        color: var(--primary-color);
-        text-decoration: none;
-        font-weight: 500;
-    }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
 
-    a:hover {
-        text-decoration: underline;
-        color: var(--primary-hover);
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px 12px;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy & Support</h1>
+    <p class="effective-date">Effective Date: September 30, 2026</p>
+
+    <p>Welcome to <strong>Greenskeeper</strong>. We are committed to protecting your privacy while helping you track and maintain your lawn care activities. This policy outlines how we handle data and how you can get support.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>Depending on your usage, Greenskeeper collects the following information:</p>
+    <ul>
+        <li><strong>Camera and Photo Access:</strong> Used solely to allow you to capture photos of your lawn, application logs, and garage inventory. Photos stay within your private account and are never shared or used for advertising.</li>
+        <li><strong>User Inputs:</strong> Logs you manually create, including mowing dates, chemical and fertilizer application records, and garage inventory tallies.</li>
+        <li><strong>Firebase Analytics & Crashlytics:</strong> Automated diagnostic data (such as crash logs, app startup times, and device IDs) processed via Google Firebase to help us improve stability and fix bugs.</li>
+        <li><strong>Firebase Authentication:</strong> Email and user ID credentials used to secure your account and sync your data.</li>
+    </ul>
+
+    <h2>2. How We Use Your Data</h2>
+    <p>We use your data exclusively to:</p>
+    <ul>
+        <li>Provide core app features, including syncing your logs across devices.</li>
+        <li>Store photo entries for your personal yard activity log and inventory.</li>
+        <li>Diagnose technical crashes and monitor app performance.</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>We do not sell, trade, or rent your personal data. We use <strong>Google Firebase</strong> infrastructure to manage backend services. For more information, review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
+
+    <h2>4. Data Control & Deletion</h2>
+    <p>You can manage camera permissions anytime in your iOS Settings. If you wish to delete your account and clear all stored lawn care data, please contact us using the support email below.</p>
+
+    <h2>5. App Support & Contact Information</h2>
+    <div class="contact-card">
+        <p style="margin: 0; font-weight: 600; color: #166534;">Need help, support, or want to request data deletion?</p>
+        <p style="margin: 8px 0 0 0;">Reach out directly via email:</p>
+        <p style="margin: 4px 0 0 0;"><strong>Support Email:</strong> <a href="mailto:tyler@powellflight.com">tyler@powellflight.com</a></p>
+    </div>
+</div>
+
+</body>
+</html>        color: var(--primary-hover);
     }
 
     .contact-box {
